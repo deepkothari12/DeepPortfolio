@@ -371,7 +371,7 @@ h6 {
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
-.scroll-top {
+/* .scroll-top {
   position: fixed;
   visibility: hidden;
   opacity: 0;
@@ -400,16 +400,42 @@ h6 {
   visibility: visible;
   opacity: 1;
   bottom: 15px;
+} */
+/* Parent makes them side-by-side */
+/* .floating-buttons {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: flex;
+  gap: 10px;
+  z-index: 99999;
+} */
+/* .scroll-top {
+  visibility: hidden;
+  opacity: 0;
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+} */
+
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
@@ -530,11 +556,13 @@ section,
   margin: 0;
   font-size: 84px;
   font-weight: 700;
+
 }
 
 .hero p {
   margin: 5px 0 0 0;
-  font-size: 26px;
+  font-size: 22px;
+  padding-left: 4px;
 }
 
 .hero p span {
@@ -1153,5 +1181,3 @@ section,
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
-
-
